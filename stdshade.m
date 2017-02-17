@@ -1,3 +1,5 @@
+% - This little script  was written by Simon Musall (Cold Spring Harbor lab)
+
 function stdshade(amatrix,alpha,acolor,F,smth)
 % usage: stdshading(amatrix,alpha,acolor,F,smth)
 % plot mean and sem/std coming from a matrix of data, at which each row is an
