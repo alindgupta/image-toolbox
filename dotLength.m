@@ -59,7 +59,7 @@ function dotLength(im1, varargin)
     
         try
             [x,y] = ginput();
-            tempArr = improfile(im2, x, y);
+            tempArr = improfile(im1, x, y);
     
             tempArrayLogical = tempArr > backgroundInt
     
