@@ -10,9 +10,9 @@ function dotLength(im1, varargin)
 %
 
     %% clear
-    clc
-    clear all
-    close all
+    %clc
+    %clear all
+    %close all
 
     %% file IO
     if nargin == 0
@@ -77,7 +77,7 @@ function dotLength(im1, varargin)
     temp = input('Go to the scale bar and enter scale ref');
     [x,y] = ginput();
     delX = x(end)-x(1);
-    finalLengths(finalLengths==0)=[];
+    finalLengths(finalLengths==0) = [];
     finalLengths = finalLengths*(temp/delX);
 
     dlmwrite ('mean.csv', finalLengths, '-append');
